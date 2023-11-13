@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Flask Calculator</h1>
+
+        <!-- Addition Form -->
+        <form action="/add" method="post" class="mb-4">
+            <label for="addNum1">Number 1:</label>
+            <input type="text" name="num1" id="addNum1" class="form-control" required>
+
+            <label for="addNum2">Number 2:</label>
+            <input type="text" name="num2" id="addNum2" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary mt-2">Add Numbers</button>
+        </form>
+
+        <!-- Subtraction Form -->
+        <form action="/subtract" method="post" class="mb-4">
+            <label for="subNum1">Number 1:</label>
+            <input type="text" name="num1" id="subNum1" class="form-control" required>
+
+            <label for="subNum2">Number 2:</label>
+            <input type="text" name="num2" id="subNum2" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary mt-2">Subtract Numbers</button>
+        </form>
+
+        <!-- Sum of Digits Form -->
+        <form action="/sumofdigits" method="post" class="mb-4">
+            <label for="sumDigits">Number:</label>
+            <input type="text" name="number" id="sumDigits" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary mt-2">Calculate Sum of Digits</button>
+        </form>
+
+        <!-- Palindrome Check Form -->
+        <form action="/ispalindrome" method="post" class="mb-4">
+            <label for="palindromeNum">Number:</label>
+            <input type="text" name="number" id="palindromeNum" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary mt-2">Check Palindrome</button>
+        </form>
+
+        <!-- Custom Zip Form -->
+        <form action="/myzip" method="post">
+            <label for="zipIt1">Iterable 1:</label>
+            <input type="text" name="it1" id="zipIt1" class="form-control" required>
+
+            <label for="zipIt2">Iterable 2:</label>
+            <input type="text" name="it2" id="zipIt2" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary mt-2">Custom Zip</button>
+        </form>
+    </div>
+</body>
+</html>
